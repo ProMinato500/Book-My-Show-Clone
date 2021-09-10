@@ -1,6 +1,6 @@
 import React from "react";
 // import logo from "../../logo.svg"
-import { BiChevronRight, BiSearch, BiMenu } from "react-icons/bi";
+import { BiChevronRight, BiSearch, BiMenu, BiShareAlt, BiChevronLeft } from "react-icons/bi";
 import { IoMdArrowDropdown } from "react-icons/io"
 
 const NavSm = () => {
@@ -9,23 +9,12 @@ const NavSm = () => {
         <div className="text-white flex items-center justify-between">
             <div>
                 <h3 className="text-xl font-bold">It All Starts Here!</h3>
-                <span className="text-gray-400 text-xs flex items-center">
-                    Kolkata < BiChevronRight/>
-                </span>
             </div>
             <div className="w-8 h-8">
-                <BiSearch className="w-full h-full"/>
+                <BiShareAlt className="w-full h-full"/>
             </div>
         </div>
         </>
-    )
-};
-const NavMd = () => {
-    return(
-        <div className="w-full flex items-center bg-white gap-3 px-3 py-2 rounded-md">
-            <BiSearch />
-            <input type="search" className="w-full focus:outline-none" placeholder="Search for movies, events, plays, sports and activities"/>
-        </div>
     )
 };
 const NavLg = () => {
@@ -57,15 +46,15 @@ const NavLg = () => {
     )
 };
 
-const Navbar = () => {
+const MovieNavbar = () => {
     return (
         <>
         <nav className="bg-navCol-900 px-4 py-2">
             <div className="md:hidden">{
                 <NavSm />
             }</div>
-            <div className="hidden lg:hidden md:flex">{
-                <NavMd />
+            <div className="hidden lg:hidden md:block">{
+                <NavSm />
             }</div>
             <div className="hidden lg:flex">{
                 <NavLg />
@@ -75,4 +64,4 @@ const Navbar = () => {
     )
 };
 
-export default Navbar;
+export default MovieNavbar;
