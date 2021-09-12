@@ -9,10 +9,10 @@ const PosterSlider = (props) => {
     return (
         <>
         <div className="flex flex-col items-start py-4">
-        <h3 className={`text-2xl font-bold ${
+        <h3 className={`text-2xl font-bold px-3 ${
             props.isDark ? "text-white" : "text-gray-800"
         }`}>{props.title}</h3>
-        <p className="text-white text-sm py-4">{props.subtitle}</p>
+        <p className="text-white text-sm px-3">{props.subtitle}</p>
         </div>
         <Slider {...settings}>
         {props.images.map((image)=> (

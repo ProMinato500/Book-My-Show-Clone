@@ -32,11 +32,11 @@ const HeroCarousel = () => {
   };
 
   const images = [
-      "https://images.unsplash.com/photo-1535016120720-40c646be5580?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-      "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-      "https://images.unsplash.com/photo-1485095329183-d0797cdc5676?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
-      "https://images.unsplash.com/photo-1458053688450-eef5d21d43b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1052&q=80",
-      "https://images.unsplash.com/photo-1523207911345-32501502db22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+      "https://in.bmscdn.com/nmcms/media-mobile-winter-fest-noon-fiesta-2018-11-28-t-18-0-39.jpeg",
+      "https://in.bmscdn.com/content-buzz/2021/02/buzz-stream-01.jpg",
+      "https://s01.sgp1.cdn.digitaloceanspaces.com/article/154384-kqixclgtvj-1612506550.jpg",
+      "https://in.bmscdn.com/content-buzz/2021/03/tamilmoviesonbookmyshowstream1200x630.jpg",
+      "https://in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-my-singapore-connect-0-2020-11-21-t-20-55-54.jpg"
   ]
 
   return (

@@ -1,21 +1,25 @@
 import React from "react";
 import EntertainmentCardSlider from "../components/Entertainment/entertainmentcard.component"
-import Premier from "../components/Premier/premier.component";
 import PosterSlider from "../components/PosterSlider/posterslider.component";
-import PremierImages from "../config/tempposter.config";
+import TempImages from "../config/tempposter.config";
+import PremierImages from "../config/premierposter.config";
 
 const HomePage = () => {
     return (
         <>
+        <div className="container mx-auto px-24 py-10">
+            <PosterSlider images={TempImages} title="Recommended Movies" isDark={false} />
+
+        </div>
         <div className="flex flex-col gap-10">
-        <div className="container mx-auto px-4">
-            <h1 className="text-2xl font-bold text-gray-800">
+        <div className="container mx-auto px-24">
+            <h1 className="text-2xl font-bold text-gray-800 py-4 px-2">
                 The best of Entertainment
             </h1>
         <EntertainmentCardSlider />
         </div>
 
-        <div className="bg-navCol-200 px-14 py-16">
+        <div className="bg-navCol-200 px-24 py-4">
             
             <div className="container mx-auto px-4">
                 <div className="flex">
@@ -24,9 +28,34 @@ const HomePage = () => {
                 className="w-full h-full"
                 />
                 </div>
-                <PosterSlider images={PremierImages} title="Premiers" subtitle="Brand New Releases Every Friday" isDark/>
+                <PosterSlider images={PremierImages} title="Premieres" subtitle="Brand New Releases Every Friday" isDark/>
             </div>
         </div>
+        <div className="container mx-auto px-24 py-10">
+            <PosterSlider images={TempImages} title="Online Streaming Events" isDark={false} />
+
+        </div>
+        <div className="container mx-auto px-24 py-10">
+            <PosterSlider images={TempImages} title="Outdoor Events" isDark={false} />
+
+        </div>
+        <div className="container mx-auto px-24 py-10">
+            <PosterSlider images={TempImages} title="Laughter Therapy" isDark={false} />
+
+        </div>
+        <div className="container mx-auto px-24 py-10">
+            <PosterSlider images={TempImages} title="Popular Events" isDark={false} />
+
+        </div>
+        <div className="container mx-auto px-24 py-10">
+            <PosterSlider images={TempImages} title="Top Games & Sport Events" isDark={false} />
+
+        </div>
+        <div className="container mx-auto px-24 py-10">
+            <PosterSlider images={TempImages} title="Explore Fun Activities" isDark={false} />
+
+        </div>
+        
         </div>
         </>
     );
