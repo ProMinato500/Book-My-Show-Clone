@@ -1,12 +1,4 @@
-import React from "react";
-import Poster from "../components/poster/poster.component";
-const Plays = () => {
-return (
-<>
-<div className="container mx-auto px-44">
-    <div className="w-full">
-        <h2 className="text-2xl font-bold ml-3">Plays in Kolkata</h2>
-        <div className="flex flex-wrap">
+            <>
             <div className="w-1/2 md:w-1/3 my-3">
                 <Poster
                     src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxOCBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00314176-ztrvuackqp-portrait.jpg"
@@ -84,11 +76,4 @@ return (
                     subtitle="Kannada ₹150"
                     />
             </div>
-        </div>
-    </div>
-    <div></div>
-</div>
-</>
-)
-};
-export default Plays;
+            </>
