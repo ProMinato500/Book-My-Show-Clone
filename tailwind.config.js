@@ -17,7 +17,10 @@ module.exports = {
             800: '#0e293f',
             900: '#000f19',
           }         
-      }
+      },
+      width: {
+        600: '600px'
+       }
     },
   },
   variants: {

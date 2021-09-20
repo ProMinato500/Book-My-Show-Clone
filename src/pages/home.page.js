@@ -2,8 +2,6 @@ import axios from "axios";
 import React, {useState, useEffect} from "react";
 import EntertainmentCardSlider from "../components/Entertainment/entertainmentcard.component"
 import PosterSlider from "../components/PosterSlider/posterslider.component";
-import TempImages from "../config/tempposter.config";
-import PremierImages from "../config/premierposter.config";
 
 const HomePage = () => {
 
@@ -17,11 +15,14 @@ const HomePage = () => {
         requestPopularMovies();
     },[]);
 
+    
+
+
 
     return (
         <>
         <div className="container mx-auto px-24 py-10">
-            <PosterSlider images={TempImages} title="Recommended Movies" isDark={false} />
+            <PosterSlider images={popularMovies} title="Recommended Movies" isDark={false} />
 
         </div>
         <div className="flex flex-col gap-10">
@@ -45,27 +46,15 @@ const HomePage = () => {
             </div>
         </div>
         <div className="container mx-auto px-24 py-10">
-            <PosterSlider images={TempImages} title="Online Streaming Events" isDark={false} />
+            <PosterSlider images={popularMovies} title="Upcoming Movies" isDark={false} />
 
         </div>
         <div className="container mx-auto px-24 py-10">
-            <PosterSlider images={TempImages} title="Outdoor Events" isDark={false} />
+            <PosterSlider images={popularMovies} title="Now Playing" isDark={false} />
 
         </div>
         <div className="container mx-auto px-24 py-10">
-            <PosterSlider images={TempImages} title="Laughter Therapy" isDark={false} />
-
-        </div>
-        <div className="container mx-auto px-24 py-10">
-            <PosterSlider images={TempImages} title="Popular Events" isDark={false} />
-
-        </div>
-        <div className="container mx-auto px-24 py-10">
-            <PosterSlider images={TempImages} title="Top Games & Sport Events" isDark={false} />
-
-        </div>
-        <div className="container mx-auto px-24 py-10">
-            <PosterSlider images={TempImages} title="Explore Fun Activities" isDark={false} />
+            <PosterSlider images={popularMovies} title="Top Rated" isDark={false} />
 
         </div>
         
